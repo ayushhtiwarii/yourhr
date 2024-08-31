@@ -1,0 +1,273 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+header h1:hover {
+    color: #FFC107;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    flex: 1;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.job-search {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.job-search h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.job-search form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.job-search input[type="text"] {
+    padding: 15px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.job-search button {
+    padding: 15px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.job-search button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.featured-jobs {
+    margin-bottom: 50px;
+}
+
+.featured-jobs h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.job-carousel {
+    display: flex;
+    justify-content: space-around;
+}
+
+.job-carousel .job {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.job-carousel .job:hover {
+    transform: scale(1.05);
+}
+
+.job-carousel .job h4 {
+    font-size: 22px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.job-carousel .job p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.job-carousel .job a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.job-carousel .job a:hover {
+    color: #0056b3;
+}
+
+.testimonials {
+    margin-bottom: 50px;
+}
+
+.testimonials h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonials .testimonial {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.testimonials .testimonial p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonials .testimonial h4 {
+    font-size: 18px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.cta {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cta h3 {
+    font-size: 28px;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta .button {
+    padding: 15px 25px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta .button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer p a {
+    color: #FFC107;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.image{
+    width:40px;
+}

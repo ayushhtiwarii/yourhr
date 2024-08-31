@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourHR - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img class="image" src="https://th.bing.com/th/id/OIP.bWM4Khbi0abANJuI9G79QAHaHa?pid=ImgDet&w=179&h=179&c=7&dpr=1.3" alt="yourHr">
+            </h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/register">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Your Dream Job Awaits</h2>
+            <p>Find the ideal job roles based on your qualifications and preferences.</p>
+            <a href="/register" class="button">Get Started</a>
+        </section>
+
+        <section class="job-search">
+            <h3>Search for Jobs</h3>
+            <form action="/search_jobs" method="GET">
+                <input type="text" placeholder="Job Title or Keywords" name="keywords" required>
+                <input type="text" placeholder="Location" name="location" required>
+                <button type="submit">Search Jobs</button>
+            </form>
+        </section>
+
+        <section class="featured-jobs">
+            <h3>Featured Jobs</h3>
+            <div class="job-carousel">
+                <div class="job">
+                    <h4>Software Developer</h4>
+                    <p>Location: New York, NY</p>
+                    <p>Company: TechCorp</p>
+                    <a href="#">Apply Now</a>
+                </div>
+                <div class="job">
+                    <h4>Graphic Designer</h4>
+                    <p>Location: San Francisco, CA</p>
+                    <p>Company: DesignHub</p>
+                    <a href="#">Apply Now</a>
+                </div>
+                <div class="job">
+                    <h4>Data Analyst</h4>
+                    <p>Location: Austin, TX</p>
+                    <p>Company: DataWorks</p>
+                    <a href="#">Apply Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h3>What Our Users Say</h3>
+            <div class="testimonial">
+                <p>"YourHR helped me find my dream job in just a few weeks. The process was seamless and easy!"</p>
+                <h4>- Jessica R.</h4>
+            </div>
+            <div class="testimonial">
+                <p>"The job recommendations were spot on. I found a job that matched my skills perfectly."</p>
+                <h4>- Mark T.</h4>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h3>Ready to Start Your Job Search?</h3>
+            <p>Sign up today and take the first step towards your next career move.</p>
+            <a href="/register" class="button">Create an Account</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 YourHR. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
